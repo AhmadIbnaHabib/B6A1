@@ -1,2 +1,3 @@
 const userName: string = "Ahmad Ibna Habib";
-console.log(userName);
+
+const userAge: number = 21;
