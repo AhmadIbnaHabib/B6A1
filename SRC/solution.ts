@@ -10,6 +10,8 @@ function formatValue(input: string | number | boolean): string | number | boolea
 
 
 
+
+
 function getLength(value: string | any[]): number {
     if (typeof value === "string") {
         return value.length;
@@ -18,6 +20,8 @@ function getLength(value: string | any[]): number {
     }
     return 0;
 }
+
+
 
 
 
@@ -35,11 +39,13 @@ class Person {
     }
 }
 
-const person1 = new Person("Ahmad Ibna", 21);
+const person1 = new Person('Ahmad Ibna', 21);
 person1.getDetails();
 
-const person2 = new Person("Habib", 48);
+const person2 = new Person('Habib', 48);
 person2.getDetails();
+
+
 
 
 
@@ -61,6 +67,9 @@ const books = [
 const topRatedBooks = filterByRating(books);
 
 
+
+
+
 type User = {
     id: number;
     name: string;
@@ -79,6 +88,7 @@ const users = [
 ];
 
 const activeUsers = filterActiveUsers(users);
+
 
 
 
@@ -106,6 +116,8 @@ const bookDetails = printBookDetails(myBook);
 
 
 
+
+
 function getUniqueValues(arr1: (number | string)[], arr2: (number | string)[]): (number | string)[] {
     const result: (number | string)[] = [];
 
@@ -128,6 +140,8 @@ const array1 = [1, 2, 3, 4, 5];
 const array2 = [3, 4, 5, 6, 7];
 
 const uniqueValues = getUniqueValues(array1, array2);
+
+
 
 
 
